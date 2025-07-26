@@ -1,0 +1,13 @@
+# Python / Django
+env/
+__pycache__/
+*.pyc
+*.sqlite3
+db.sqlite3
+*.log
+media/
+
+# Node.js / Next.js
+node_modules/
+.next/
+.env
