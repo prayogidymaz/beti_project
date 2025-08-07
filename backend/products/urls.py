@@ -1,8 +1,11 @@
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
 from .views import (
-    ProductViewSet, ProductImageViewSet,
-    ProductReviewViewSet, CategoryViewSet
+    ProductViewSet,
+    ProductImageViewSet,
+    ProductReviewViewSet,
+    CategoryViewSet,
+    ProductImageUploadView,  # <- ini penting pakai koma
 )
 
 router = DefaultRouter()
@@ -13,5 +16,5 @@ router.register(r'categories', CategoryViewSet, basename='product-categories')
 
 urlpatterns = [
     path('', include(router.urls)),
+    path('upload-image/', ProductImageUploadView.as_view(), name='product-image-upload'),
 ]
-

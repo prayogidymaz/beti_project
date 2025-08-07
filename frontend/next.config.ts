@@ -9,6 +9,9 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+  images: {
+    domains: ["localhost"], // ✅ Tambahkan ini agar gambar dari localhost:8000 bisa ditampilkan
+  },
 };
 
 export default nextConfig;

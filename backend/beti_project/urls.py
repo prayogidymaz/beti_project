@@ -6,6 +6,9 @@ from rest_framework_simplejwt.views import (
     TokenObtainPairView,
     TokenRefreshView,
 )
+# from django.db import connection
+
+# print(">>> DATABASE:", connection.settings_dict['NAME'])
 
 urlpatterns = [
     path('admin/', admin.site.urls),
